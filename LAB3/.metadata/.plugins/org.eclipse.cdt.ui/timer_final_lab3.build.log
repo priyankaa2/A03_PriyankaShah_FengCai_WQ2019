@@ -1,0 +1,31 @@
+
+**** Build of configuration Release for project timer_final_lab3 ****
+
+"C:\\TI\\ccsv8\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: ARM Compiler
+"C:/TI/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=vfplib -me --include_path="C:/TI/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --include_path="C:/TI/CC3200SDK_1.3.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.3.0/cc3200-sdk/example/common" --include_path="C:/TI/CC3200SDK_1.3.0/cc3200-sdk/inc/" --define=ccs --define=NON_NETWORK --define=cc3200 -g --gcc --printf_support=full --diag_warning=225 --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 134: warning #225-D: function "fillRect" declared implicitly
+"../main.c", line 161: warning #225-D: function "fillRect" declared implicitly
+"../main.c", line 338: warning #69-D: integer conversion resulted in a change of sign
+"../main.c", line 348: warning #69-D: integer conversion resulted in a change of sign
+"../main.c", line 358: warning #69-D: integer conversion resulted in a change of sign
+"../main.c", line 368: warning #69-D: integer conversion resulted in a change of sign
+"../main.c", line 378: warning #69-D: integer conversion resulted in a change of sign
+"../main.c", line 505: warning #225-D: function "Adafruit_Init" declared implicitly
+"../main.c", line 506: warning #225-D: function "fillScreen" declared implicitly
+"../main.c", line 601: warning #183-D: argument is incompatible with corresponding format string conversion
+"../main.c", line 604: warning #225-D: function "fillRect" declared implicitly
+Finished building: "../main.c"
+ 
+Building target: "timer_final_lab3.out"
+Invoking: ARM Linker
+"C:/TI/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=vfplib -me --define=ccs --define=NON_NETWORK --define=cc3200 -g --gcc --printf_support=full --diag_warning=225 --display_error_number --abi=eabi -z -m"timer_final_lab3.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/lib" -i"C:/TI/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --reread_libs --display_error_number --warn_sections --xml_link_info="timer_final_lab3_linkInfo.xml" --rom_model -o "timer_final_lab3.out" "./Adafruit_GFX.obj" "./Adafruit_OLED.obj" "./gpio_if.obj" "./main.obj" "./pinmux.obj" "./startup_ccs.obj" "./test.obj" "./timer_if.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -llibc.a -l"C:/TI/CC3200SDK_1.3.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" 
+<Linking>
+Finished building target: "timer_final_lab3.out"
+ 
+"C:/TI/ccsv8/utils/tiobj2bin/tiobj2bin" "timer_final_lab3.out" "timer_final_lab3.bin" "C:/TI/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armofd" "C:/TI/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armhex" "C:/TI/ccsv8/utils/tiobj2bin/mkhex4bin"
+ 
+
+**** Build Finished ****
